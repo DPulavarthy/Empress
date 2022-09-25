@@ -1,0 +1,13 @@
+body {
+    background: #111111;
+    color: #c0c0c0;
+    overflow: hidden;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font: 100px system-ui;
+}

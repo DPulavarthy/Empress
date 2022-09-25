@@ -1,0 +1,18 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "main": "app/index.js",
+  "scripts": {
+    "prebuild": "node util/cleanup.mjs",
+    "build": "npx tsc",
+    "pretest": "npm run build --silent",
+    "test": "electron-forge start -- dev",
+    "prestart": "npm run build --silent",
+    "start": "electron-forge start"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.66",
+    "electron": "^20.2.0",
+    "typescript": "^4.8.3"
+  }
+}
